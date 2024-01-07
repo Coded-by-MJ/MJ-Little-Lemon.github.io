@@ -1,0 +1,299 @@
+:root{
+    --main-bg-color: #fbdabb79;
+    --main-txt-color:  #495e57;
+    --main-secondary-color:  #aa8f6f;  
+    --font-headings: 'Oswald', 'Roboto', serif;
+    --font-text: 'Poppins', "Open Sans", sans-serif; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--main-bg-color);
+    font-size: 16px;
+    
+ 
+}
+
+
+
+
+
+
+
+
+
+
+.reserve-title{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.reserve-title h1{
+    font-family: var(--font-headings);
+    color: var(--main-txt-color);
+    letter-spacing: 0.2rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.reserve-title h1::before{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 2px;
+    background-color: var(--main-secondary-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.reserve-title p{
+    font-family: var(--font-text);
+    font-size: 1.3rem;
+    color: var(--main-secondary-color);
+    line-height: 1.5rem;
+}
+
+
+
+
+.reservation-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    justify-content: space-between;
+    
+  }
+  
+.input-container{
+    width: 31%;
+    position: relative;
+    z-index: 5;
+}
+
+.input-container label {  
+    font-weight: bold;
+    font-family: var(--font-headings);
+    color: var(--main-secondary-color);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    opacity: 1;
+    letter-spacing: 0.05rem;
+}
+
+.input-container select, .input-container input{
+    padding: 0.5rem;
+    width: 100%;
+    color: var(--main-secondary-color);
+    font-size: 1rem;
+    font-family: var(--font-text);
+    border: 0.2rem solid var(--main-secondary-color);
+    background-color: transparent;
+    opacity: 1;
+    appearance: none;
+}
+
+
+
+.guest-icon, .time-icon{
+    position: absolute;
+    right: 4%;
+    z-index: 1;
+    transform: translateY(9px);
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--main-secondary-color);
+}
+
+.calendar-icon{
+    position: absolute;
+    right: 4%;
+    z-index: 1;
+    transform: translateY(9px);
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--main-secondary-color);
+}
+
+.reserve-btn{
+    display: flex;
+    align-items: center;
+    width: 100%;
+   
+}
+
+.reserve-btn button{
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-family: var(--font-headings);
+    color: var(--main-txt-color);
+    max-width: 45%;
+    padding: 0.5rem;
+    border: 0.2rem solid  var(--main-txt-color);
+    cursor: pointer;
+    opacity: 1;
+    letter-spacing: 0.05rem;
+    margin: 0 auto;
+    
+}
+
+.reserve-btn button:hover{
+    background-color: var(--main-txt-color);
+    color: var(--main-secondary-color);
+    border-color: var(--main-secondary-color);
+}
+
+
+@media only screen and (min-width: 1400px){
+
+  .reserve-title h1{
+    font-size: 6.5rem;
+  }
+
+  .reserve-title p{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  
+  .ui-datepicker{
+    width: 26.7rem;
+ }
+}
+
+
+@media only screen and (min-width:1200px) and (max-width: 1399.98px) {
+    .ui-datepicker{
+        width: 22.7rem;
+     }
+
+     .reserve-title h1{
+        font-size: 5.5rem;
+      }
+    
+      .reserve-title p{
+        font-size: 1.3rem;
+      }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .ui-datepicker{
+        width: 18.7rem;
+     }
+
+     .reserve-title h1{
+        font-size: 5.5rem;
+      }
+    
+      .reserve-title p{
+        font-size: 1.3rem;
+      }
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px){
+
+.reserve-title h1{
+   font-size: 5rem;
+
+    
+}
+
+.reserve-title p{
+    font-size: 1.2rem;
+}
+
+.reservation-form {
+    flex-direction: column;
+    align-items: center;
+        
+ }
+
+.input-container{
+    width: 55%;
+    margin-bottom: 1.3rem;
+}
+
+.input-container label{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.input-container input, .input-container select{
+    font-size: 1rem;
+}
+
+.ui-datepicker{
+    width: 26rem;
+ }
+
+
+}
+
+
+@media only screen and (max-width: 767.98px){
+    .ui-datepicker{
+        width: 25rem;
+     }
+
+    .reserve-title h1::before{
+        width: 200px;
+     
+     }
+
+
+     .reserve-title h1{
+        font-size: 3.5rem;
+        letter-spacing: 0.1rem;
+         
+     }
+     
+     .reserve-title p{
+         font-size: 1rem;
+     }
+     
+     .reservation-form {
+         flex-direction: column;
+         align-items: center;
+             
+      }
+     
+     .input-container{
+         width: 55%;
+         margin-bottom: 1.3rem;
+     }
+     
+     .input-container label{
+         font-size: 1rem;
+         line-height: 1rem;
+         letter-spacing: 0;
+     }
+     
+     .input-container input, .input-container select{
+         font-size: 0.8rem;
+     }
+     
+     .guest-icon, .time-icon{
+         font-size: 1rem;
+     }
+     
+     .calendar-icon{
+         font-size: 0.9rem;
+     }
+     
+
+
+}

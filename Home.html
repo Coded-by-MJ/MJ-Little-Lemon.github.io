@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Little Lemon is a family-owned Mediterranean restaurant focused on traditional recipes served with a modern twist.">
+    <meta name="keywords" content="Restaurant, Food, Eat">
+    <meta name="author" content="Miracle Justice">
+
+    <title>Little Lemon</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+    <!---CSS LINKS-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Poppins|Open+Sans|Oswald"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="CSS/Home.css"/>
+
+    <!--Script LINKS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/18758ff323.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    
+   
+     
+
+    
+
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta property="og:title" content="Little Lemon">
+    <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant focused on traditional recipes served with a modern twist.">
+    <meta property="og:image" content="URL to an image for sharing">
+    <meta property="og:url" content="URL of your website">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags (for Twitter sharing) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Little Lemon">
+    <meta name="twitter:description" content="Little Lemon is a family-owned Mediterranean restaurant focused on traditional recipes served with a modern twist.">
+    <meta name="twitter:image" content="URL to an image for sharing">
+
+
+
+ </head>
+ <body>
+    <!--Headings-->
+ <header>
+          <nav class="nav-bar-container">
+            <div class="logo">
+              <a href="Home.html"><img src="images/logo-word-light.png" width="230px"    alt="little-lemon-logo"></a>
+            </div>
+             <ul class="nav-links">
+                 <li> <a href="Home.html"  target="_self" >Home</a></li>
+                 <li> <a href="Menu.html" target="_self"  >Menu</a></li>
+                 <li> <a href="Reservations.html" target="_self" >Reservations</a></li>
+                 <li> <a href="About.html" target="_self" >About</a> </li>
+                 <li> <a href="Contact.html" target="_self" >Contact</a></li>
+              </ul>
+              <div class="toggleMenu"  onclick="toggleMenu(this)">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+          </nav>
+ </header>
+                               
+     <main class="container-fluid">
+                       <!--First Content-->
+         <div class="row first-content">
+            <div class="col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+              <img class="first-bg"  src="images/picture-logo-dark.png" alt="little-lemon-logo">
+                <h1 class="first-heading">Mediterranean Cuisines</h1>
+                <p class="first-para">Savor a unique Mediterranean journey at Little Lemon, a haven for food enthusiasts. <span><a href="Menu.html" data-bs-toggle="tooltip" target="_self" title="Go to Menu" class="first-link">Our Menu<i class="fa-solid fa-angles-right"></i></a></span> features a delightful array of Mediterranean treasures, from savory mezze platters with rich hummus and falafel to succulent lamb kebabs and perfectly grilled sea bass. 
+                </p>
+                <div class="first-image-bar">
+                    <img src="images/grilled-bass.jpg" height="420" width="auto" alt="grilled bass" class="first-img-one">
+                    <img src="images/lamb-kebab.jpg" height="500"  width="auto"     alt="lamb kebab" class="first-img-two">
+                    <img src="images/lemon-juice.jpg"  height="500"    width="auto" alt="Lemon juice" class="first-img-three">
+                    <img src="images/hum-mus.jpg" height="420" width="auto" alt="hummus" class="first-img-four">
+                </div> 
+            </div> 
+         </div>  
+                            <!--Second Content, Reservation-->
+
+        <div class="row second-content">
+                 <div class="col-md-5  col-lg-6 col-xl-6 col-xxl-5">
+                     <div>
+                          <img src="images/silverware.png" alt="silverware" class="second-image"  width="175px" height="240px">
+                          <h2 class="second-heading">Reserve a Table</h2>
+                      </div>
+                 </div>
+             
+                 <div class="col-md-7 col-lg-6 col-xl-6 col-xxl-7">
+                     <div class="second-form">
+                          <form method="post" target="_self" action="Reservations.html">
+                             <div>
+                                <label for="guestLists">Party Size</label><br> 
+                               <select id="guestLists" name="guestLists">
+                                <option value="1 guest">1 guest</option>
+                                <option value="2 guests" selected>2 guests</option>
+                                <option value="3 guests">3 guests</option>
+                                <option value="4 guests">4 guests</option>
+                                <option value="5 guests">5 guests</option>
+                                <option value="6 guests">6 guests</option>
+                                </select><span class="guest-icon"><i class="fa-solid fa-angle-down"></i></span>
+                              </div>
+                              <div>
+                                <label for="date">Date</label> <br>
+                                <input type="text" id="date" name="date" placeholder="mm/dd/yyyy" required>
+                                <span class="calendar-icon"><i class="fa-regular fa-calendar"></i></span>
+                              </div>
+                              <div>
+                                <label for="time">Time</label> <br>
+                                <input type="text" id="time" name="time" required>
+                                <span class="time-icon"><i class="fa-solid fa-angle-down"></i></span>
+                              </div>
+                               <div>
+                                <button type="submit" class="find-btn" title="Go to Reservations" data-bs-toggle="tooltip">Find a Table</button>
+                               </div>
+                           </form>
+                        </div>
+                       
+                 </div>  
+         </div>   
+
+                            <!--Third Content, About US-->
+            <div class="row third-content">
+               <div class="col-md-7  col-lg-7 col-xl-7 col-xxl-7">
+                    <img src="images/mario and adrian.jpg"  alt="Picture of Mario and Adrian" class="third-image">
+
+                </div>
+            
+               <div class="col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                    <img src="images/Oister.png" alt="Oister" class="third-bg"  width="248px" height="180px">
+                    <h2 class="third-heading">Our History</h2>
+                    <p class="third-para">Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant.</p>
+                    <span><a href="About.html" target="_self" title="Go to About" class="third-link" data-bs-toggle="tooltip">Dive in<i class="fa-solid fa-angles-right"></i></a></span>    
+               </div>
+            </div>
+                         
+                           <!--Fourth Content, Our Values-->
+            <div class="row fourth-content">
+                <div class="col-md-12  col-lg-12 col-xl-12 col-xxl-12">
+                        <h2 class="fourth-heading">Local & Sustainable</h2> 
+                        <p class="fourth-para">Little Lemon embodies sustainability and community values. With a commitment to ocean-friendly practices, we prioritize responsibly sourced seafood, ensuring the health of marine ecosystems. By emphasizing local ingredients, we support nearby farmers and reduce their carbon footprint, fostering a sense of community.</p>
+
+                       <div>
+                        <img src="images/coral.png" alt="coral" class="fourth-img-one" ><br>
+                        <p class="img-text coral">Ocean Friendly</p>
+                       </div>
+                       <div>
+                        <img src="images/anchor.png" alt="anchor"  class="fourth-img-two" ><br>
+                        <p class="img-text anchor">Local</p>
+                       </div>
+                       <div>
+                        <img src="images/two fish.png" alt="two fish" class="fourth-img-three"><br>
+                        <p class="img-text two-fish">Seasonal</p>
+                       </div>
+
+                </div>
+            </div> 
+
+    
+     </main>
+    
+       <footer class="container-fluid">
+            <div class="row footer">
+              <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+                    <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                            <h2 class="footer-heading">Don't Be ShellFish</h2>
+                            <p class="footer-para">Join our mailing list and receive news and offers</p>
+
+
+                            <div class="footer-email">
+                                  <form method="post">
+                                    <label for="email" class="email-label">Enter your email here**</label>
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" id="send-email" placeholder="Email" required>
+                                        <button type="button" class="btn email-button" onclick="submitEmail()">Join</button>
+                                    </div>
+                                  </form>
+                            </div>
+                            <span id="submitText"  class="email-submit-text">Thanks for Submitting!</span>
+
+                            <span class="copyright"><i class="fa-regular fa-copyright"></i>2023 Little Lemon. Coded by MJ</span>
+
+                    </div>
+
+                    <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+
+                          <span class="phone-number">903-951-7466</span>
+                          <span class="email-address"><a href="mailto:miracleosemudiahen@hotmail.com">miracleosemudiahen@hotmail.com</a></span>
+                          <span class="address"> 109 N Dearborn St, Chicago, IL 60602, USA</span>
+                             
+                             
+                        <div class="insta-container">
+                                <a href="https://www.instagram.com/coded_by_mj?igsh=MWoxaXdzOWJjM3FpcA%3D%3D&utm_source=qr" class="insta-link" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        </div>
+                        <div class="twitter-container">
+                                <a href="https://twitter.com/Coded_by_MJ" class="twitter-link"  target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        </div>
+                        <div class="whatsapp-container">
+                                <a href="https://wa.me/+2349039517466?text=Hello%20*Miracle%20Justice,*%20I%20got%20your%20contact%20from%20Little%20Lemon%20website.%20I%20would%20love%20to%20connect%20with%20you%20my%20name%20is%20" class="whatsapp-link" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+                        </div>
+
+
+                        <img src="images/footer-fish.png" alt="fish"  class="footer-img" width="145px" height="157px">
+
+
+
+                    </div>
+
+             </div>
+       </footer>
+
+         
+        
+       <script src="JS/littlelemon.js"></script>
+</body>
+</html>

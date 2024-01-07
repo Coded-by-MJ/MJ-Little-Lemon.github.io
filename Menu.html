@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Little Lemon is a family-owned Mediterranean restaurant focused on traditional recipes served with a modern twist.">
+    <meta name="keywords" content="Restaurant, Food, Eat">
+    <meta name="author" content="Miracle Justice">
+
+    <title>Little Lemon</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+    <!---CSS LINKS-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Poppins|Open+Sans|Oswald"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="CSS/Home.css"/>
+    <link rel="stylesheet" href="CSS/Menu.css"/>
+
+    <!--Script LINKS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/18758ff323.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+
+    
+   
+     
+
+    
+
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta property="og:title" content="Little Lemon">
+    <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant focused on traditional recipes served with a modern twist.">
+    <meta property="og:image" content="URL to an image for sharing">
+    <meta property="og:url" content="URL of your website">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags (for Twitter sharing) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Little Lemon">
+    <meta name="twitter:description" content="Little Lemon is a family-owned Mediterranean restaurant focused on traditional recipes served with a modern twist.">
+    <meta name="twitter:image" content="URL to an image for sharing">
+
+
+
+    <style>
+      /* Set the width of the datepicker to 100% */
+      
+    </style>
+ </head>
+ <body>
+    <!--Headings-->
+ <header>
+          <nav class="nav-bar-container">
+            <div class="logo">
+              <a href="Home.html"><img src="images/logo-word-light.png" width="230px"    alt="little-lemon-logo"></a>
+            </div>
+             <ul class="nav-links">
+                 <li> <a href="Home.html"  target="_self" >Home</a></li>
+                 <li> <a href="Menu.html" target="_self"  >Menu</a></li>
+                 <li> <a href="Reservations.html" target="_self" >Reservations</a></li>
+                 <li> <a href="About.html" target="_self" >About</a> </li>
+                 <li> <a href="Contact.html" target="_self" >Contact</a></li>
+              </ul>
+              <div class="toggleMenu"  onclick="toggleMenu(this)">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+          </nav>
+ </header>
+                               
+     <main class="container-fluid">
+           <div class="menu-title">
+               <h1>Our Special Menu</h1>
+               <p>Tradition and innovation unite in every bite, showcasing our unwavering commitment to quality. At Little Lemon, we invite you to relish the irresistible allure of Mediterranean cuisine, where freshness, authenticity, and a deep love for food combine to craft an unforgettable dining adventure.
+                 Join us and let your taste buds embark on a sun-soaked Mediterranean culinary voyage like no other.</p>
+          </div>
+            <div class="menu-table">
+                  <div class="menu-column">
+                        <h2>Starters</h2>
+                         <div class="single-menu">
+                                <img src="images/Bruschetta.jpg" alt="Bruschetta" >
+                                <div class="food-content">
+                                        <h3>Bruschetta al Pomodoro <span>$9.99</span></h3>
+                                        <p>Grilled bread rubbed with garlic, topped with diced tomatoes, fresh basil, and olive oil.</p>
+                                </div>
+                         </div>
+                         <div class="single-menu">
+                                <img src="images/carpaccio.jpg" alt="Carpaccio"  >
+                                <div class="food-content">
+                                        <h3>Carpaccio di Manzo <span>$9.99</span></h3>
+                                        <p>Thinly sliced raw beef tenderloin served with arugula, Parmesan shavings, and a drizzle of olive oil.</p>
+                                </div>
+                         </div>
+                         <div class="single-menu">
+                                <img src="images/fristo.jpg" alt="Fritto"  >
+                                <div class="food-content">
+                                        <h3>Fritto Misto di Mare <span>$9.99</span></h3>
+                                        <p>Mixed seafood (shrimp, calamari, and small fish) lightly battered and fried, served with aioli.</p>
+                                </div>
+                         </div>
+                         <div class="single-menu">
+                                <img src="images/rich-hummus.jpg" alt="hummus">
+                                <div class="food-content">
+                                        <h3>Rich Hummus <span>$9.99</span></h3>
+                                        <p>Creamy chickpea dip blended with tahini, lemon juice, garlic, and olive oil, served with pita bread.</p>
+                                </div>
+                         </div>
+                  </div>
+                  <div class="menu-column">
+                        <h2>Main Courses</h2>
+                         <div class="single-menu">
+                                <img src="images/Osso.jpg" alt="Osso" >
+                                <div class="food-content">
+                                        <h3>Osso Buco <span>$9.99</span></h3>
+                                        <p>Braised veal shanks cooked in a savory broth with tomatoes, white wine, and aromatics.</p>
+                                </div>
+                         </div>
+                         <div class="single-menu">
+                                <img src="images/puttanesca.jpg" alt="Puttanesca">
+                                <div class="food-content">
+                                        <h3>Pasta Puttanesca <span>$9.99</span></h3>
+                                        <p>Spaghetti with a flavorful sauce made from tomatoes, olives, capers, garlic, and anchovies.</p>
+                                </div>
+                         </div>
+                         <div class="single-menu">
+                                <img src="images/Falafell.jpg" alt="Falafel" >
+                                <div class="food-content">
+                                        <h3>Falafel <span>$9.99</span></h3>
+                                        <p>Deep-fried chickpea or fava bean patties, served with tahini sauce and salad.</p>
+                                </div>
+                         </div>
+                         <div class="single-menu">
+                                <img src="images/bass.jpg" alt="Bass"  >
+                                <div class="food-content">
+                                        <h3>Grilled Sea Bass <span>$9.99</span></h3>
+                                        <p> Whole sea bass marinated and grilled to perfection, served with lemon and fresh herbs.</p>
+                                </div>
+                         </div>
+                  </div>
+                  <div class="menu-column">
+                        <h2>Sides</h2>
+                         <div class="single-menu">
+                                <img src="images/Caponata.jpg" alt="Caponata"  >
+                                <div class="food-content">
+                                        <h3>Caponata <span>$9.99</span></h3>
+                                        <p>Sicilian eggplant dish with tomatoes, olives, capers, and celery, cooked in a sweet and sour sauce.</p>
+                                </div>
+                         </div>
+                         <div class="single-menu">
+                                <img src="images/salad.jpg" alt="Rucola">
+                                <div class="food-content">
+                                        <h3>Rucola e Parmigiano<span>$9.99</span></h3>
+                                        <p>Arugula salad with cherry tomatoes, shaved Parmesan, and a balsamic vinaigrette.</p>
+                                </div>
+                         </div>
+                         <div class="single-menu">
+                                <img src="images/potato.jpg" alt="Patate"   >
+                                <div class="food-content">
+                                        <h3>Patate al Forno <span>$9.99</span></h3>
+                                        <p>Roasted potatoes with rosemary, garlic, and a sprinkle of sea salt.</p>
+                                </div>
+                         </div>
+                         <div class="single-menu">
+                                <img src="images/verdure.jpg" alt="Verdure">
+                                <div class="food-content">
+                                        <h3>Verdure Grigliate <span>$9.99</span></h3>
+                                        <p>Grilled mixed vegetables (zucchini, bell peppers, eggplant) drizzled with olive oil.</p>
+                                </div>
+                         </div>
+                  </div>
+            </div>
+
+    
+     </main>
+    
+     <footer class="container-fluid">
+        <div class="row footer">
+          <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+                <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                        <h2 class="footer-heading">Don't Be ShellFish</h2>
+                        <p class="footer-para">Join our mailing list and receive news and offers</p>
+
+
+                        <div class="footer-email">
+                              <form method="post">
+                                <label for="email" class="email-label">Enter your email here**</label>
+                                <div class="input-group">
+                                    <input type="email" class="form-control" id="send-email" placeholder="Email" required>
+                                    <button type="button" class="btn email-button" onclick="submitEmail()">Join</button>
+                                </div>
+                              </form>
+                        </div>
+                        <span id="submitText"  class="email-submit-text">Thanks for Submitting!</span>
+
+                        <span class="copyright"><i class="fa-regular fa-copyright"></i>2023 Little Lemon. Coded by MJ</span>
+
+                </div>
+
+                <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+
+                      <span class="phone-number">903-951-7466</span>
+                      <span class="email-address"><a href="mailto:miracleosemudiahen@hotmail.com">miracleosemudiahen@hotmail.com</a></span>
+                      <span class="address"> 109 N Dearborn St, Chicago, IL 60602, USA</span>
+                         
+                         
+                    <div class="insta-container">
+                            <a href="https://www.instagram.com/coded_by_mj?igsh=MWoxaXdzOWJjM3FpcA%3D%3D&utm_source=qr" class="insta-link" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <div class="twitter-container">
+                            <a href="https://twitter.com/Coded_by_MJ" class="twitter-link"  target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    </div>
+                    <div class="whatsapp-container">
+                            <a href="https://wa.me/+2349039517466?text=Hello%20*Miracle%20Justice,*%20I%20got%20your%20contact%20from%20Little%20Lemon%20website.%20I%20would%20love%20to%20connect%20with%20you%20my%20name%20is%20" class="whatsapp-link" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+                    </div>
+
+
+                    <img src="images/footer-fish.png" alt="fish"  class="footer-img" width="145px" height="157px">
+
+
+
+                </div>
+
+         </div>
+   </footer>
+
+        <script src="JS/littlelemon.js"></script>
+</body>
+</html>
