@@ -234,17 +234,6 @@ document.addEventListener('DOMContentLoaded', function () {
     $('[data-bs-toggle="tooltip"]').tooltip({placement: "bottom"});   
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  // Check if the alert has been shown
-  const alertShown = localStorage.getItem('alertShown');
-
-  // If the alert has not been shown, show it and set the flag in localStorage
-  if (!alertShown) {
-      alert("Hello User! Please be advised that this website is designed for practical purposes, and no data is stored. For a fully functional website tailored to your specific needs, kindly contact MJ for professional assistance.");
-      // Set the flag in localStorage
-      localStorage.setItem('alertShown', 'true');
-  }
-});
 
 
 

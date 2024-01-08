@@ -219,12 +219,13 @@ body{
 .reservation-form {
     flex-direction: column;
     align-items: center;
+    gap: 1.5rem;
         
  }
 
 .input-container{
     width: 55%;
-    margin-bottom: 1.3rem;
+    
 }
 
 .input-container label{
@@ -268,12 +269,13 @@ body{
      .reservation-form {
          flex-direction: column;
          align-items: center;
+         gap: 1.5rem;
              
       }
      
      .input-container{
-         width: 55%;
-         margin-bottom: 1.3rem;
+         width: 60%;
+    
      }
      
      .input-container label{

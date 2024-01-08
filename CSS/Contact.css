@@ -116,6 +116,13 @@ input[type="number"] {
     width: 12rem;
     font-family: var(--font-headings);
     font-weight: bold;
+    text-decoration: none;
+}
+
+
+.contact-phone a {
+    color: var(--main-txt-color);
+    text-decoration: none;
 }
 
 .contact-email{

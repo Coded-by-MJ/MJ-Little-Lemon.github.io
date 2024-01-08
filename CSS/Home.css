@@ -539,7 +539,7 @@ select{
     position: relative;
     width: 100%;
     height: 280px;
-    padding: 0 80px;
+    padding: 0 10px;
     left: 50%;
     opacity: 0;
     transform: translateY(15px) translateX(-50%); /* Adjust the initial distance from the bottom */
@@ -729,6 +729,7 @@ select{
     background-color: var(--main-secondary-color);
     height: 900px;
     position: relative;
+    bottom: 0;
 
 }
 
@@ -742,7 +743,6 @@ select{
     position: absolute;
     letter-spacing: 0.1rem;
     top: 5rem;
-    left: 2rem;
     margin-bottom: 0;
 
 }
@@ -756,15 +756,15 @@ select{
     width: 12rem;
     position: absolute;
     top: 15rem;
-    left: 2.5rem;
+    left: 1rem;
     
 }
 
 .footer-email{
-    width: 17rem;
+    width: 55%;
     position: absolute;
     top: 18.5rem;
-    left: 2.5rem;
+    left: 1rem;
 
 }
 
@@ -821,20 +821,20 @@ select{
     position: absolute;
     left: 50%;
     transform: translate(-50%, 80px);
+    text-decoration: none;
 }
 
 .email-address{
     display: inline-block;
     font-family: var(--font-text);
     font-size: 1rem;
-    width: 18rem;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 110px);
 
 }
 
-.email-address a{
+.email-address a, .phone-number a{
     color: var(--main-txt-color);
     text-decoration: none;
 }
@@ -884,12 +884,12 @@ select{
 .twitter-container{
     position: absolute;
     width: 22px;
-    height: 25px;
+    height: 24px;
     background-color: transparent;
     font-size: 30px;
     border-radius: 10px;
     left: 50%;
-    transform: translate(-7px, 168.5px);
+    transform: translate(-7px, 168px);
     
 }
 
@@ -913,7 +913,7 @@ select{
     font-size: 30px;
     border-radius: 10px;
     left: 50%;
-    transform: translate(24px, 168.5px);;
+    transform: translate(24px, 168px);;
 }
 
 
@@ -962,6 +962,11 @@ select{
         transform: translateY(0) translateX(-44%);
     }
     
+
+
+    .footer-email{
+      width: 85%;
+    }
 }
 
 
@@ -1504,6 +1509,7 @@ select{
     background-color: var(--main-secondary-color);
     height: 760px;
     position: relative;
+    bottom: 0;
 
 }
 
@@ -1594,6 +1600,7 @@ select{
     position: absolute;
     left: 5.5rem;
     transform: translateY(60px);
+    text-decoration: none;
 }
 
 .email-address{
@@ -1607,7 +1614,7 @@ select{
 
 }
 
-.email-address a{
+.email-address a, .phone-number a{
     color: var(--main-txt-color);
     text-decoration: none;
 }
@@ -2173,7 +2180,7 @@ select{
     background-color: var(--main-secondary-color);
     height: 600px;
     position: relative;
-
+    bottom: 0;
 }
 
 /*footer first content*/
@@ -2268,6 +2275,7 @@ select{
     width: 15%;
     position: absolute;
     transform: translate(85px, 100px);
+    text-decoration: none;
 }
 
 .email-address{
@@ -2281,7 +2289,7 @@ select{
 }
 
 
-.email-address a{
+.email-address a, .phone-number a{
     color: var(--main-txt-color);
     text-decoration: none;
 }
