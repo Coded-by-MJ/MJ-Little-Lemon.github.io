@@ -154,6 +154,21 @@ $(function() {
     });
      });
 
+document.addEventListener('DOMContentLoaded', function () {
+
+   var findbtn = document.querySelector('.find-btn')
+   findbtn.addEventListener('click', function() {
+    let findform = document.getElementById('second-form');
+
+    if (findform && findform.checkValidity()) {
+        window.location.href = 'Reservations.html';
+    } else if (findform) {
+        findform.reportValidity();
+    }
+
+})
+});
+
 
 
 
