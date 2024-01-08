@@ -246,10 +246,6 @@ body{
 
 
 @media only screen and (max-width: 767.98px){
-    .ui-datepicker{
-        width: 25rem;
-     }
-
     .reserve-title h1::before{
         width: 200px;
      
@@ -298,4 +294,22 @@ body{
      
 
 
+}
+
+
+
+
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px){
+.ui-datepicker{
+    width: 20.8rem;
+ }
+
+}
+
+
+@media only screen and (max-width: 575.98px){
+    .ui-datepicker{
+        width: 15rem;
+     }
 }
