@@ -115,7 +115,7 @@ header{
 
 
     .nav-bar-container{
-      position: absolute;
+      position: relative;
     }
 
     .nav-links{
