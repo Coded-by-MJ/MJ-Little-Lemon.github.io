@@ -63,9 +63,9 @@ header{
     list-style-type: none;
     align-items: center;
     gap: 80px;
-    padding: 0px;
+    padding: 0;
     background-color: var(--main-secondary-color);
-    margin-bottom: 0;
+    margin: 0;
 
 }
 
@@ -84,9 +84,9 @@ header{
     font-weight: 500;
     display: inline-block;
     position: relative;
-    padding: 3px 0;
+    padding: 0;
     border-bottom: 2px solid transparent;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .nav-links >li >a:before {
