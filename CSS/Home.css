@@ -33,6 +33,7 @@ header{
 
 .nav-bar-container{
     position: fixed;
+    top: 0;
     width: 100%;
     background-color: var(--main-secondary-color);
     display: flex;
