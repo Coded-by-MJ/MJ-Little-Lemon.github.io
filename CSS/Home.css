@@ -6,6 +6,7 @@
     --main-secondary-color:  #aa8f6f;  
     --font-headings: 'Oswald', 'Roboto', serif;
     --font-text: 'Poppins', "Open Sans", sans-serif; 
+    --nav-bar-height: 68px;
 }
 
 *{
@@ -23,44 +24,68 @@ body{
 
 /*Header and navbar design*/
 
+header{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    z-index: 99;
+}
+
 .nav-bar-container{
     position: fixed;
-    top: 0;
-    background-color: var(--main-secondary-color);
-    z-index: 100;
     width: 100%;
+    background-color: var(--main-secondary-color);
     display: flex;
-    --nav-bar-height: 62px;
+    flex-direction: row;
+    padding: 0 16px;
+    gap: 32px;
+    height: 70px;
     align-items: center;
     justify-content: space-between;
+    opacity: 0.9;
 
 
+}
+
+
+.menu-icon{
+    color: var(--main-txt-color);
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
 }
 
 
 .nav-links{
-    width: 65%;
     display: flex;
     flex-direction: row;
-    list-style: none;
+    list-style-type: none;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 80px;
+    padding: 0px;
+    background-color: var(--main-secondary-color);
     margin-bottom: 0;
-    
+
 }
 
-.nav-links li a {
-    color: var(--main-txt-color);
-    font-family: var(--font-headings);
-    text-decoration: none;
-    font-size: 1.2rem;
-    min-height: 100%;
+
+.nav-links > li{
     display: flex;
-    align-items: flex-start;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-family: var(--font-headings);
+
+}
+.nav-links > li > a {
+    color: var(--main-txt-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
     position: relative;
     padding: 3px 0;
     border-bottom: 2px solid transparent;
-    
+    margin-bottom: 0;
 }
 
 .nav-links >li >a:before {
@@ -82,44 +107,36 @@ body{
 
 
 
-.toggleMenu{
-    color: var(--main-txt-color);
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
-}
 
 
 
 /*Header and navbar design for smaller devices*/
 @media only screen and (max-width: 991.98px){
-     
-    .nav-bar-container{
-     position: absolute;
-    }
+
 
     .nav-links{
         display: none;
     }
-     .toggleMenu{
+     
+    .menu-icon{
         display: block;
      }
 
     
-     .nav-links--sidebar{
+     .nav-links--mobile{
         position: absolute;
         top: var(--nav-bar-height);
         right: 0;
-        min-height: 100%;
-        z-index: 50;
         display: flex;
+        z-index: 50;
+        padding: 80px 60px;
+        min-height: 100%;
+        gap: 10px;
         flex-direction: column;
         background-color: var(--main-secondary-color);
-        justify-content: flex-start;
         align-items: flex-start;
-        padding: 80px 50px;
+        opacity: 0.95;
         animation: fadein 0.3s forwards;
-        overflow: auto;
      }
 
      @keyframes fadein {
@@ -136,7 +153,7 @@ body{
         }
     }
 
-    .navigation--mobile--fadeout {
+    .nav-links--mobile--fadeout {
         animation: fadeout 300ms forwards;
     }
 

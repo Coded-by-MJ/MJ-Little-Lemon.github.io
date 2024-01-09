@@ -1,19 +1,18 @@
 const toggleMenu = () => {
     const navigation = document.querySelector(".nav-links");
-    const burgerMenu = document.querySelector(".toggleMenu");
+    const burgerMenu = document.querySelector(".menu-icon");
+    const iconElement = burgerMenu.querySelector("i");
     
-    if (burgerMenu) {
+
+    const isBurger = iconElement.classList.contains("fa-bars");
+    const iconName = isBurger ? "fa-xmark" : "fa-bars";
+
+    iconElement.setAttribute("class", "fa-solid " + iconName);
+    if (!isBurger) {
         navigation.classList.add("nav-links--mobile--fadeout");
         setTimeout(() => {
-            navigation.classList.toggle("nav-links--sidebar");
+            navigation.classList.toggle("nav-links--mobile");
         }, 300);
-
-        const iconElement = burgerMenu.querySelector("i");
-        if (iconElement) {
-            const isBurger = iconElement.classList.contains("fa-bars");
-            const iconName = isBurger ? "fa-xmark" : "fa-bars";
-            iconElement.setAttribute("class", "fa-solid " + iconName);
-        }
     } else {
         navigation.classList.remove("nav-links--mobile--fadeout");
         navigation.classList.toggle("nav-links--mobile");
