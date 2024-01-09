@@ -269,7 +269,7 @@ input[type="number"] {
         width: 120px;
     }
     .contact-email {
-        width: 21rem; 
+        width: 22rem; 
      }
 
 }
@@ -318,7 +318,7 @@ input[type="number"] {
        }
 
        .contact-email{
-        width: 21rem;
+        width: 22rem;
         left: 15rem;
         transform: initial;
        }
@@ -408,7 +408,7 @@ input[type="number"] {
 
 
     .contact-email{
-        width: 17rem;
+        width: 18rem;
         left: 0;
         margin: 0;
         transform: initial;
