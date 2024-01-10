@@ -881,7 +881,7 @@ select{
     background-color: transparent;
     border-radius: 50%;
     left: 50%;
-    transform: translate(-40px, 170px);
+    transform: translate(-50px, 170px);
 
 }
 
@@ -908,7 +908,7 @@ select{
     background-color: transparent;
     border-radius: 50%;
     left: 50%;
-    transform: translate(-7px, 170px);
+    transform: translate(-10px, 170px);
     
 }
 
@@ -930,7 +930,7 @@ select{
     background-color: transparent;
     border-radius: 41%;
     left: 50%;
-    transform: translate(26px, 170px);;
+    transform: translate(30px, 170px);;
 }
 
 
