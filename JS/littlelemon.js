@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check if the current URL contains the link's href
     if (currentUrl === linkUrl) {
       // If it does, add the 'active' class to highlight the link
-      link.style.color = "var(--main-bg-color)"
+      link.style.color = "var(--main-secondary-color)"
     }
   });
 });

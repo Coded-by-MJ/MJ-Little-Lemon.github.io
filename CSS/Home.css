@@ -1,7 +1,7 @@
 
 /*define element for root document*/
 :root{
-    --main-bg-color: #fbdabb79;
+    --main-bg-color: rgb(253,237,222);
     --main-txt-color:  #495e57;
     --main-secondary-color:  #aa8f6f;  
     --font-headings: 'Oswald', 'Roboto', serif;
@@ -35,7 +35,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: var(--main-secondary-color);
+    background-color: rgb(253,237,222);
     display: flex;
     flex-direction: row;
     padding: 0 16px;
@@ -43,7 +43,7 @@ header{
     height: 70px;
     align-items: center;
     justify-content: space-between;
-    opacity: 0.9;
+    opacity: 1;
 
 
 }
@@ -64,7 +64,7 @@ header{
     align-items: center;
     gap: 80px;
     padding: 0;
-    background-color: var(--main-secondary-color);
+    background-color: rgb(253,237,222);
     margin: 0;
 
 }
@@ -91,7 +91,7 @@ header{
 
 .nav-links >li >a:before {
     content: '';
-    background: var(--main-bg-color);
+    background:  var(--main-txt-color);
     display: block;
     position: absolute;
     bottom: 0;
@@ -101,7 +101,7 @@ header{
 
 }
 
-.nav-links > li > a:hover{color: var(--main-bg-color);
+.nav-links > li > a:hover{color: var(--main-secondary-color);
     transition: all 0.2s ease-in-out;}
 
 .nav-links > li > a:hover::before {width: 100%;}
@@ -138,9 +138,9 @@ header{
         min-height: 100%;
         gap: 10px;
         flex-direction: column;
-        background-color: var(--main-secondary-color);
+        background-color: rgb(253,237,222);
         align-items: flex-start;
-        opacity: 0.95;
+        opacity: 1;
         animation: fadein 0.3s forwards;
      }
 
