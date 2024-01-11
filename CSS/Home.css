@@ -246,28 +246,43 @@ html{
 
 
 
-
-.insta-container:hover, .whatsapp-container:hover, .twitter-container:hover{
-    background-color: white;
+.social-button a{
+    text-decoration: none;
+    color: transparent;
 }
 
 
-.insta-link:hover{
-  color: #bc2a8d;
+.social-button:hover:nth-child(1){
+    background:  radial-gradient(
+        circle at 30% 107%, #fdf497 0%, 
+        #fdf497 5%, #fd5949 45%,
+        #d6249f 60%,#285AEB 90%
+    ); 
+    transform: scale(1.15);
+}
+
+.social-button:hover:nth-child(1) svg {
+    stroke: white;
 }
 
 
-.whatsapp-link:hover{
-  color: #25d366;;
+.social-button:hover:hover:nth-child(2){
+    transform: scale(1.15);
+    background-color: #14171A;
 }
 
-
-
-.twitter-link:hover{
-    color: #14171A;
-
+.social-button:hover:hover:nth-child(2) svg{
+    fill: white;
 }
 
+.social-button:hover:hover:nth-child(3){
+    transform: scale(1.15);
+    background-color: #25d366;
+}
+
+.social-button:hover:hover:nth-child(3) svg{
+    fill: white;
+}
 
 
 
@@ -835,114 +850,88 @@ select{
 /*footer second content*/
 
 
+.footer-contact{
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+    width: 335px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 100px);
+}
+
+
+
+
 .phone-number{
     display: inline-block;
     font-family: var(--font-text);
     font-size: 1rem;
     color: var(--main-txt-color);
-    width: 8rem;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 80px);
     text-decoration: none;
+    margin: 0;
+    
 }
 
 .email-address{
     display: inline-block;
     font-family: var(--font-text);
     font-size: 1rem;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 110px);
+    color: var(--main-txt-color);
+    margin: 0;
 
 }
+
 
 .email-address a, .phone-number a{
     color: var(--main-txt-color);
     text-decoration: none;
 }
 
-
 .address{
     display: inline-block;
     font-family: var(--font-text);
     font-size: 1rem;
     color: var(--main-txt-color);
-    width: 21rem;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 140px);
+    margin: 0;
+
+  
 }
 
 
-.insta-container{
-    position: absolute;
-    width: 25px;
-    height: 26px;
+
+
+
+.social-media-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    transform: translateY(180px);
+    width: 100%;
+
+}
+
+.social-button{
+    width: 2.1875rem;
+    height: 2.1875rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
     background-color: transparent;
-    border-radius: 50%;
-    left: 50%;
-    transform: translate(-50px, 170px);
-
-}
-
-
-.insta-link{
-    display: inline-block;
-    text-decoration: none;
     cursor: pointer;
-    font-size: 31px;
-    color: var(--main-txt-color);
-    line-height: 0;
-    transform: translateY(-2px) translateX(-1px);
-
+    transition: all 0.3s;
+    display: grid;
+    place-items: center;
 
 }
 
-
-
-
-.twitter-container{
-    position: absolute;
+.social-button svg{
     width: 25px;
-    height: 26px;
-    background-color: transparent;
-    border-radius: 50%;
-    left: 50%;
-    transform: translate(-10px, 170px);
-    
-}
-
-.twitter-link{
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 31px;
-    color: var(--main-txt-color);
-    line-height: 0;
-    transform: translateY(-2px) translateX(-1px);
-}
-
-
-.whatsapp-container{
-    position: absolute;
-    width: 25px;
-    height: 26px;
-    background-color: transparent;
-    border-radius: 41%;
-    left: 50%;
-    transform: translate(30px, 170px);;
-}
-
-
-.whatsapp-link{
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 31px;
-    color: var(--main-txt-color);
-    line-height: 0;
-    transform: translateY(-2px) translateX(-1px);
+    height: 25px;
 }
 
 
@@ -952,7 +941,7 @@ select{
     left: 50%;
     width: 100px;
     height: 111px;
-    transform: translate(-50%, -40px);
+    transform: translate(-50%, -60px);
 
 }
 
@@ -1608,28 +1597,41 @@ select{
   /*footer second content*/
 
 
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 400px;
+    flex-wrap: nowrap;
+    align-items: start;
+    position: absolute;
+    left: 5.5rem;
+    transform: translateY(60px);
+}
+
+
+
+
 .phone-number{
     display: inline-block;
     font-family: var(--font-text);
     font-size: 1rem;
     color: var(--main-txt-color);
-    width: 17%;
-    position: absolute;
-    left: 5.5rem;
-    transform: translateY(60px);
     text-decoration: none;
+    margin: 0;
+    max-width: 13rem;
+    
 }
-
 .email-address{
     display: inline-block;
     font-family: var(--font-text);
     font-size: 1rem;
-    width: 40%;
-    position: absolute;
-    left: 5.5rem;
-    transform: translateY(95px);
+    color: var(--main-txt-color);
+    margin: 0;
+    max-width: 23rem;
 
 }
+
 
 .email-address a, .phone-number a{
     color: var(--main-txt-color);
@@ -1641,80 +1643,42 @@ select{
     font-family: var(--font-text);
     font-size: 1rem;
     color: var(--main-txt-color);
-    width: 25%;
-    position: absolute;
-    left: 5.5rem;
-    transform: translateY(130px);
+    margin: 0;
+    max-width: 13rem;
+  
 }
 
 
-.insta-container{
-    position: absolute;
-    width: 25px;
-    height: 26px;
+
+.social-media-container{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    transform: translate(82px, 175px);
+    width: 130px;
+
+}
+
+.social-button{
+    width: 2.1875rem;
+    height: 2.1875rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
     background-color: transparent;
-    border-radius: 50%;
-    transform: translate(82px, 180px);
-
-}
-
-
-.insta-link{
-    display: inline-block;
-    text-decoration: none;
     cursor: pointer;
-    font-size: 31px;
-    color: var(--main-txt-color);
-    line-height: 0;
-    transform: translateY(-2px) translateX(-1px);
+    transition: all 0.3s;
+    display: grid;
+    place-items: center;
 
 }
 
-
-
-
-.twitter-container{
-    position: absolute;
+.social-button svg{
     width: 25px;
-    height: 26px;
-    background-color: transparent;
-    border-radius: 50%;
-    transform: translate(116px, 180px);
-    
+    height: 25px;
 }
 
-.twitter-link{
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 31px;
-    color: var(--main-txt-color);
-    line-height: 0;
-    transform: translateY(-2px) translateX(-1px);
-    
-}
-
-
-.whatsapp-container{
-    position: absolute;
-    width: 25px;
-    height: 26px;
-    background-color: transparent;
-    border-radius: 41%;
-    transform: translate(150px, 180px);;
-}
-
-
-.whatsapp-link{
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 31px;
-    color: var(--main-txt-color);
-    line-height: 0;
-    transform: translateY(-2px) translateX(-1px);
-
-}
 
 
 .footer-img{
@@ -2278,25 +2242,37 @@ select{
 
 /*footer second content*/
 
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 400px;
+    flex-wrap: nowrap;
+    align-items: start;
+    transform: translate(50px, 100px);
+}
+
+
+
 
 .phone-number{
     display: inline-block;
     font-family: var(--font-text);
     font-size: 1.2rem;
     color: var(--main-txt-color);
-    width: 15%;
-    position: absolute;
-    transform: translate(85px, 100px);
     text-decoration: none;
+    margin: 0;
+    max-width: 13rem;
+    
 }
 
 .email-address{
     display: inline-block;
     font-family: var(--font-text);
     font-size: 1.2rem;
-    width: 36%;
-    position: absolute;
-    transform: translate(85px, 140px);
+    color: var(--main-txt-color);
+    margin: 0;
+    max-width: 23rem;
 
 }
 
@@ -2311,76 +2287,33 @@ select{
     font-family: var(--font-text);
     font-size: 1.2rem;
     color: var(--main-txt-color);
-    width: 25%;
-    position: absolute;
-    transform: translate(85px, 180px);
+    margin: 0;
+    max-width: 18rem;
+  
 }
 
 
-.insta-container{
-    position: absolute;
-    width: 25px;
-    height: 26px;
+.social-media-container{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    transform: translate(55px, 110px);
+    width: 180px;
+
+}
+
+.social-button{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
     background-color: transparent;
-    border-radius: 50%;
-    transform: translate(90px, 250px);
-
-}
-
-
-.insta-link{
-    display: inline-block;
-    text-decoration: none;
     cursor: pointer;
-    font-size: 31px;
-    color: var(--main-txt-color);
-    line-height: 0;
-    transform: translateY(-2px) translateX(-1px);
-}
-
-
-
-
-.twitter-container{
-    position: absolute;
-    width: 25px;
-    height: 26px;
-    background-color: transparent;
-    border-radius: 50%;
-    transform: translate(125px, 250px);
-    
-}
-
-.twitter-link{
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 31px;
-    color: var(--main-txt-color);
-    line-height: 0;
-    transform: translateY(-2px) translateX(-1px);
-    
-}
-
-
-.whatsapp-container{
-    position: absolute;
-    width: 25px;
-    height: 26px;
-    background-color: transparent;
-    border-radius: 41%;
-    transform: translate(160px, 250px);
-}
-
-
-.whatsapp-link{
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 31px;
-    color: var(--main-txt-color);
-    line-height: 0;
-    transform: translateY(-2px) translateX(-1px);
+    transition: all 0.3s;
+    display: grid;
+    place-items: center;
 
 }
 
@@ -2388,9 +2321,8 @@ select{
 .footer-img{
     position: absolute;
     bottom: 0;
-    right: 0;
     background-color: transparent;
-    transform: translate(-99px, -99px);
+    transform: translate(200px, -60px);
 
 }
 
@@ -2620,41 +2552,17 @@ select{
         transform: translateY(-30px);
     }
 
-    .phone-number{
+    .footer-contact{
+        width: 500px;
+    }
+
+    .phone-number, .email-address, .address{
       font-size: 1.5rem;
-      width: 11rem;
-      transform: translate(90px, 100px);
-    }
-
-    .email-address{
-        font-size: 1.5rem;
-        width: 28rem;
-        transform: translate(90px, 140px);
-    }
-
-    .address{
-        font-size: 1.5rem;
-        width: 20rem;
-        transform: translate(90px, 180px);
-    }
-
-    .insta-container{
-        transform: translate(94px, 260px);
-    }
-
-    .twitter-container{
-        transform: translate(130px, 260px);
-    }
-
-    .whatsapp-container{
-        transform: translate(166px, 260px);
     }
 
 
-    .footer-img{
-        transform: translate(-190px, -100px);
 
-    }
+ 
  }
 
 
