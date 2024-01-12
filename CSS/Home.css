@@ -246,7 +246,8 @@ html{
 
 
 
-.social-button a{
+.social-button{
+    display: inline-block;
     text-decoration: none;
     color: transparent;
 }
