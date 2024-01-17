@@ -60,7 +60,7 @@ const observer = new IntersectionObserver(entries => {
       entry.target.classList.add('visible-stable');
     }
   });
-}, { threshold: 0.7}); // Adjust the threshold as needed
+}, { threshold: 0.3}); // Adjust the threshold as needed
 
 // Observe each element
 fadeElements.forEach(element => {
@@ -89,7 +89,7 @@ const mobileobserver = new IntersectionObserver(entries => {
       entry.target.classList.add('visible-mobile');
     }
   });
-}, { threshold: 0.5 }); // Adjust the threshold as needed
+}, { threshold: 0.3 }); // Adjust the threshold as needed
 
 // Observe each element
 mobilefadeElements.forEach(element => {
@@ -105,7 +105,7 @@ const secondobserver = new IntersectionObserver(entries => {
       entry.target.classList.add('visible-mobile-two');
     }
   });
-}, { threshold: 0.5 }); // Adjust the threshold as needed
+}, { threshold: 0.3 }); // Adjust the threshold as needed
 
 // Observe each element
 secondfadeElements.forEach(element => {
@@ -121,7 +121,7 @@ const phoneobserver = new IntersectionObserver(entries => {
       entry.target.classList.add('visible-mobile-three');
     }
   });
-}, { threshold: 0.5}); // Adjust the threshold as needed
+}, { threshold: 0.3}); // Adjust the threshold as needed
 
 // Observe each element
 phonefadeElements.forEach(element => {
