@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const fadeElements = document.querySelectorAll('.second-heading, .third-heading, .third-para, .third-image, .fourth-heading, .fourth-para, .third-link, .history-heading, .history-first-para, .history-second-para, .venue-heading, .venue-para-one, .venue-para-two, .history-img-one, .history-img-two')
 
-// Trigger the fade-in when the element becomes visible in the viewport
+// Trigger the fade-in when the element becomes visible in the viewportg
 // Create an Intersection Observer
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -60,7 +60,7 @@ const observer = new IntersectionObserver(entries => {
       entry.target.classList.add('visible-stable');
     }
   });
-}, { threshold: 0.3}); // Adjust the threshold as needed
+}, { threshold: 0.3 }); // Adjust the threshold as needed
 
 // Observe each element
 fadeElements.forEach(element => {
