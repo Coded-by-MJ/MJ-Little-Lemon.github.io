@@ -40,6 +40,9 @@ input[type="number"] {
 }
 
 
+textarea{
+    resize: none;
+}
 
 
 
