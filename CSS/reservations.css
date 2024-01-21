@@ -102,6 +102,7 @@ body{
     background-color: transparent;
     opacity: 1;
     appearance: none;
+    border-radius: 0.25rem;
 }
 
 

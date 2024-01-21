@@ -510,6 +510,7 @@ select{
     background-color: transparent;
     opacity: 1;
     appearance: none;
+    border-radius: 0.25rem;
     
     
 }
@@ -566,6 +567,7 @@ select{
     opacity: 1;
     letter-spacing: 0.05rem;
     margin-top: 1rem;
+    border-radius: 0.25rem;
 }
 
 
@@ -1278,6 +1280,7 @@ select{
     background-color: transparent;
     opacity: 1;
     appearance: none;
+    border-radius: 0.25rem;
 }
 
 .ui-datepicker{
@@ -1332,6 +1335,7 @@ select{
     opacity: 1;
     letter-spacing: 0.05rem;
     margin-top: 1rem;
+    border-radius: 0.25rem;
 }
 
 
@@ -1902,6 +1906,7 @@ select{
     background-color: transparent;
     opacity: 1;
     appearance: none;
+    border-radius: 0.25rem;
 }
 
 .ui-datepicker{
@@ -1952,6 +1957,7 @@ select{
     border: 0.2rem solid  var(--main-txt-color);
     cursor: pointer;
     line-height: 1.5rem;
+    border-radius: 0.25rem;
     opacity: 1;
     letter-spacing: 0.05rem;
     margin-top: 1rem;
