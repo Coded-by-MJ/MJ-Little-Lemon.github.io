@@ -395,7 +395,7 @@ select{
 
 
 .carousel-wrap::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 1rem;
 }
 .carousel-wrap::-webkit-scrollbar-track {
     background: var(--main-secondary-color);
