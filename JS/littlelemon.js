@@ -41,6 +41,60 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+//Carousel Functions
+document.addEventListener('DOMContentLoaded', function () {
+  const slider = document.querySelector('.carousel-wrap');
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  slider.addEventListener('mousedown', (e) => {
+      isDown = true;
+      slider.classList.add('active');
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+  });
+
+  slider.addEventListener('mouseleave', () => {
+      isDown = false;
+      slider.classList.remove('active');
+  });
+
+  slider.addEventListener('mouseup', () => {
+      isDown = false;
+      slider.classList.remove('active');
+  });
+
+  slider.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 3;
+
+      slider.scrollLeft = scrollLeft - walk;
+  });
+
+  function nextSlide() {
+      const nextScrollLeft = (scrollLeft + slider.offsetWidth) % slider.scrollWidth;
+      slider.scrollLeft = nextScrollLeft;
+      scrollLeft = nextScrollLeft;
+  }
+
+  // Automatically move the slider every 3 seconds
+  setInterval(() => {
+      if (!isDown) {
+          // Reset to the first slide when reaching the end
+          if (scrollLeft + slider.offsetWidth >= slider.scrollWidth) {
+              slider.scrollLeft = 0;
+              scrollLeft = 0;
+          } else {
+              nextSlide();
+          }
+      }
+  }, 3000);
+});
+
+
 
 
 
@@ -82,7 +136,7 @@ fadeElements.forEach(element => {
 
 
 //for mobile screen potrait
-const mobilefadeElements = document.querySelectorAll('.first-img-one, .first-img-two, .first-img-three, .first-img-four, .second-heading, .third-image')
+const mobilefadeElements = document.querySelectorAll('.second-heading, .third-image')
 const mobileobserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
