@@ -41,38 +41,69 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-//Carousel Functions
+//Carousel Function for mobile and desktop 
 document.addEventListener('DOMContentLoaded', function () {
   const slider = document.querySelector('.carousel-wrap');
   let isDown = false;
   let startX;
   let scrollLeft;
 
-  slider.addEventListener('mousedown', (e) => {
+  slider.addEventListener('mousedown', handleMouseDown);
+  slider.addEventListener('touchstart', handleTouchStart);
+
+  slider.addEventListener('mouseleave', handleMouseLeave);
+  slider.addEventListener('touchend', handleTouchEnd);
+
+  slider.addEventListener('mouseup', handleMouseUp);
+  slider.addEventListener('touchcancel', handleTouchEnd);
+
+  slider.addEventListener('mousemove', handleMouseMove);
+  slider.addEventListener('touchmove', handleTouchMove);
+
+  function handleMouseDown(e) {
       isDown = true;
       slider.classList.add('active');
       startX = e.pageX - slider.offsetLeft;
       scrollLeft = slider.scrollLeft;
-  });
+  }
 
-  slider.addEventListener('mouseleave', () => {
+  function handleTouchStart(e) {
+      isDown = true;
+      slider.classList.add('active');
+      startX = e.touches[0].pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+  }
+
+  function handleMouseLeave() {
       isDown = false;
       slider.classList.remove('active');
-  });
+  }
 
-  slider.addEventListener('mouseup', () => {
+  function handleTouchEnd() {
       isDown = false;
       slider.classList.remove('active');
-  });
+  }
 
-  slider.addEventListener('mousemove', (e) => {
+  function handleMouseUp() {
+      isDown = false;
+      slider.classList.remove('active');
+  }
+
+  function handleMouseMove(e) {
       if (!isDown) return;
       e.preventDefault();
       const x = e.pageX - slider.offsetLeft;
       const walk = (x - startX) * 3;
-
       slider.scrollLeft = scrollLeft - walk;
-  });
+  }
+
+  function handleTouchMove(e) {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.touches[0].pageX - slider.offsetLeft;
+      const walk = (x - startX) * 3;
+      slider.scrollLeft = scrollLeft - walk;
+  }
 
   function nextSlide() {
       const nextScrollLeft = (scrollLeft + slider.offsetWidth) % slider.scrollWidth;
@@ -93,11 +124,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   }, 3000);
 });
-
-
-
-
-
 
 
 
