@@ -384,6 +384,9 @@ select{
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
+
+    scrollbar-color: var(--main-txt-color) var(--main-secondary-color);
+    scrollbar-width: thin;
     
   
 }
@@ -1232,7 +1235,9 @@ select{
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
-    
+
+    scrollbar-color: var(--main-txt-color) var(--main-secondary-color);
+    scrollbar-width: thin;
   
 }
 
@@ -1910,6 +1915,9 @@ select{
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
+
+    scrollbar-color: var(--main-txt-color) var(--main-secondary-color);
+    scrollbar-width: thin;
     
   
 }
