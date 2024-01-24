@@ -87,13 +87,27 @@ header{
     color: var(--main-txt-color);
     text-decoration: none;
     font-weight: 500;
+    background-image: linear-gradient(to right,
+    var(--main-secondary-color),
+    var(--main-secondary-color) 50%,
+            var(--main-txt-color) 50%);
+    background-position: -100%;
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     display: inline-block;
     position: relative;
     font-family: var(--font-headings);
     font-size: 20px;
-    padding: 0;
+    padding: 3px 0;
     border-bottom: 2px solid transparent;
     margin: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-links > li > a.active{
+    color: var(--main-secondary-color);
+    -webkit-text-fill-color: var(--main-secondary-color);
 }
 
 .nav-links >li >a:before {
@@ -108,10 +122,14 @@ header{
 
 }
 
-.nav-links > li > a:hover{color: var(--main-secondary-color);
-    transition: all 0.2s ease-in-out;}
+.nav-links > li > a:hover{
+    background-position: 0;
+ 
+}
 
-.nav-links > li > a:hover::before {width: 100%;}
+.nav-links > li > a:hover::before {
+    width: 100%;
+}
 
 
 

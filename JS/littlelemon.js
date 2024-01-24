@@ -21,23 +21,24 @@ const toggleMenu = () => {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Get the current URL
-  var currentUrl = window.location.href;
+  // Get the current pathname
+  var currentPathname = window.location.pathname;
 
   // Get all links in the navigation
-  var links = document.querySelectorAll('.nav-links li a');
+  var links = document.querySelectorAll('.nav-links > li > a');
 
-  // Iterate through each link and check if it matches the current URL
+  // Iterate through each link and check if its href is included in the current pathname
   links.forEach(function(link) {
-    var linkUrl = link.href;
+      var linkPathname = new URL(link.href).pathname;
 
-    // Check if the current URL contains the link's href
-    if (currentUrl === linkUrl) {
-      // If it does, add the 'active' class to highlight the link
-      link.style.color = "var(--main-secondary-color)"
-    }
+      // Check if the current pathname includes the link's pathname
+      if (currentPathname.includes(linkPathname)) {
+          // If it does, add the 'active' class to highlight the link
+          link.classList.add('active');
+      }
   });
 });
+
 
 
 
