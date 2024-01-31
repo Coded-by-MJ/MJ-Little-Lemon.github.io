@@ -2240,7 +2240,7 @@ select{
 
 /*Our Values section */
 .fourth-content{
-    height: 48rem;
+    height: 55rem;
     position: relative;
     background-color: transparent;
 
@@ -2253,6 +2253,7 @@ select{
     color: var(--main-txt-color);
     font-size: 5.5rem;
     letter-spacing: 0.2rem;
+    margin-top: 5rem;
     width: 29rem;
     transform: translateY(25px) ;
     opacity: 0;
@@ -2673,9 +2674,7 @@ select{
         font-size: 2.5rem;
     }
 
-    .fourth-content{
-        height: 53rem;
-    }
+   
 
     .fourth-heading{
         width: 33rem;
