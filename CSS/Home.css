@@ -1536,7 +1536,7 @@ select{
 
 
 .fourth-content{
-    height: 43rem;
+    height: 50rem;
     position: relative;
     background-color: transparent;
 
@@ -1561,6 +1561,7 @@ select{
     font-size: 1.2rem;
      color: var(--main-secondary-color);
      margin-bottom: 0;
+     margin-top: 4rem;
      line-height: 1.5rem;
      width: 33rem;
      transform: translateY(25px) ;
