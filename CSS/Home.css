@@ -469,12 +469,13 @@ select{
 
   .second-content{
     background-color: transparent;
-    position: relative;
     height: 37rem;
     margin-bottom: 2rem;
 }
 
-
+.post-two{
+    position: relative;
+}
 .second-image{
     background-color: transparent;
     position: absolute;
@@ -516,7 +517,7 @@ select{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 16rem;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 20rem;
@@ -610,23 +611,28 @@ select{
 
 
 .third-content{
-    height: 34rem;
-    position: relative;
+    height: 44rem;
     background-color: transparent;
-    margin-bottom: 2rem;
 }
 
-.third-image {
+.post-three{
     position: relative;
+}
+
+
+.third-image {
+    position: absolute;
+    object-fit: cover;
+    object-position: 50% 100%;
     width: 100%;
-    height: 280px;
+    height: 350px;
     border-radius: 1.5rem;
     padding: 0 10px;
     left: 50%;
     opacity: 0;
     transform: translateY(15px) translateX(-50%); /* Adjust the initial distance from the bottom */
     transition: opacity  0.2s ease-in, transform 0.2s ease-in;      
-    z-index: 1;
+
 }
 
 
@@ -635,8 +641,7 @@ select{
     position: absolute;
     width: 184px;
     height: 131px;
-    bottom: 8rem;
-    right: 50%;
+    top: 0;
     transform: translateX(60%)  rotateZ(-21deg);
 
 }
@@ -649,7 +654,7 @@ select{
     z-index: 2;
     margin: 0;
     letter-spacing: 0.1rem;
-    bottom: 8rem;
+    top: 2rem;
     transform: translateY(15px) ;
     opacity: 0;
     transition: opacity  0.3s ease, transform 0.3s ease;
@@ -664,7 +669,7 @@ select{
      line-height: 1.5rem;
      position: absolute;
      margin: 0;
-     bottom: 2rem;
+     top: 8rem;
      transform: translateY(15px) ;
      opacity: 0;
      transition: opacity  0.3s ease, transform 0.3s ease;
@@ -681,7 +686,7 @@ select{
     text-decoration: none;
     font-size: 1.2rem;
     position: absolute;
-    bottom: 0;
+    top: 12.5rem;
     transform: translateY(15px) ;
     opacity: 0;
     transition: opacity  0.3s ease, transform 0.3s ease;
@@ -705,7 +710,7 @@ select{
     color: var(--main-txt-color);
     font-size: 3.5rem;
     width: 15rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
     transform: translateY(15px) ;
     opacity: 0;
     letter-spacing: 0.1rem;
@@ -1027,6 +1032,14 @@ select{
     .footer-email{
       width: 85%;
     }
+
+    .third-image{
+        object-position: 15% 100%;
+    }
+
+    .third-link{
+        top: 15.5rem;
+    }
 }
 
 
@@ -1041,21 +1054,9 @@ select{
         left: 35%;
     }
 
-    .third-heading{
-        bottom: 10rem;
 
-    }
 
-    .third-bg{
-        right: 55%;
-    }
 
-   .third-para{
-     bottom: 5rem;
-   }
-   .third-link{
-    bottom: 2rem;
-   }
 
   .fourth-content{
         height: 34rem;
@@ -1319,11 +1320,14 @@ select{
 /*Reserve Table section */
   .second-content{
     background-color: transparent;
-    position: relative;
     height: 30rem;
     margin-bottom: 1rem;
 }
 
+
+.post-two{
+    position: relative;
+}
 
 .second-image{
     background-color: transparent;
@@ -1449,18 +1453,23 @@ select{
 
 
 .third-content{
-    height: 25rem;
-    position: relative;
     background-color: transparent;
     margin-bottom: 1rem;
 }
 
+
+.post-three{
+    height: 25rem;
+    position: relative;
+}
+
 .third-image {
-    position: absolute;
-    width: 54%;
+    width: 100%;
     border-radius: 1rem;
     height: 100%;
+    object-fit: cover;
     opacity: 0;
+    object-position: 20% 100%;
     transform: translateY(25px);
     transition: opacity 0.2s ease-in, transform 0.2s ease-in;
 
@@ -1501,7 +1510,7 @@ select{
      color: var(--main-secondary-color);
      line-height: 1.5rem;
      position: absolute;
-     bottom: 2.5rem;
+     bottom: 3.5rem;
      margin-bottom: 0;
      transform: translateY(25px) ;
      opacity: 0;
@@ -1996,9 +2005,14 @@ select{
 
 .second-content{
     background-color: transparent;
-    position: relative;
+   
     height: 30rem;
     margin-bottom: 2rem;
+}
+
+
+.post-two{
+    position: relative;
 }
 /*Reserve Table section */
 
@@ -2138,18 +2152,22 @@ select{
 /*About Us section */
 
 .third-content{
-    height: 25rem;
-    position: relative;
+  
     background-color: transparent;
     margin-bottom: 2rem;
 }
 
+.post-three{
+    height: 25rem;
+    position: relative;
+}
+
 .third-image {
-    position: absolute;
     border-radius: 1rem;
-    width: 57.5%;
+    width: 100%;
     height: 100%;
     opacity: 0;
+    object-fit: cover;
     transform: translateY(25px);
     transition: opacity 0.2s ease-in, transform 0.2s ease-in;
   
@@ -2160,20 +2178,19 @@ select{
 .third-bg{
     background-color: transparent;
     position: absolute;
-    z-index: 1;
     top: 0;
-    right: 5rem;
+    right: 10rem;
 
 }
 
 .third-heading{
     font-family: var(--font-headings);
     color: var(--main-txt-color);
-    font-size: 5.5rem;
-    letter-spacing: 0.2rem;
     position: absolute;
+    font-size: 5.5rem;
+    z-index: 1;
+    letter-spacing: 0.2rem;
     top: 0;
-    z-index: 2;
     width: 18rem;
     margin-bottom: 0;
     transform: translateY(25px) ;
@@ -2188,7 +2205,7 @@ select{
      color: var(--main-secondary-color);
      line-height: 1.5rem;
      position: absolute;
-     bottom: 2.5rem;
+     bottom: 3.5rem;
      margin-bottom: 0;
      transform: translateY(25px) ;
     opacity: 0;
@@ -2550,14 +2567,14 @@ select{
         width: 27.7rem;
     }
  
-     .third-content{
+     .post-three{
         height: 28rem;
      }
 
      .third-bg{
         right: 10rem;
         transform: rotateZ(-18deg);
-        top: -20px;
+        top: 36px;
      }
 
      .third-para{
@@ -2612,16 +2629,14 @@ select{
      }
 
      
-     .second-content{
-        height: 32rem;
-     }
+    
      .second-heading{
         font-size: 6.5rem;
         width: 22rem;
      }
 
      .second-form{
-        width: 40rem;
+        width: 33rem;
      }
      .ui-datepicker{
         width: 39.7rem;
@@ -2634,22 +2649,23 @@ select{
         font-size: 1.8rem;
      }
 
-     .third-content {
-        height: 35rem;
+     .post-three {
+        height: 32rem;
     }
 
     .third-heading{
         font-size: 6.5rem;
         width: 22rem;
-        transform: translateY(25px);
+
     }
     .third-bg {
         right: 15rem;
+        top: 50px
     }
 
     .third-para{
         font-size: 1.5rem;
-        bottom: 9rem;
+        bottom: 8rem;
         line-height: 1.8rem;
     }
 
