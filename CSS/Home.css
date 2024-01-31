@@ -1550,6 +1550,7 @@ select{
     font-size: 5rem;
     letter-spacing: 0.2rem;
     width: 29rem;
+    margin-top: 5rem;
     transform: translateY(25px) ;
     opacity: 0;
     transition: opacity  0.3s ease, transform 0.3s ease;
@@ -1561,7 +1562,6 @@ select{
     font-size: 1.2rem;
      color: var(--main-secondary-color);
      margin-bottom: 0;
-     margin-top: 5rem;
      line-height: 1.5rem;
      width: 33rem;
      transform: translateY(25px) ;
