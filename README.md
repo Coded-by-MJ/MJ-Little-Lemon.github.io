@@ -32,4 +32,4 @@ Little Lemon is a family-owned Mediterranean restaurant focused on traditional r
 
 
 - Email - [Miracle Justice](mailto:miracleosemudiahen@hotmail.com)
-- Twitter - [@Coded-by-MJ](https://twitter.com/Coded_by_MJ)
+- Twitter - [@Coded-by-MJ](https://twitter.com/MiracleJustice_)
