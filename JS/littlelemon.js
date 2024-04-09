@@ -188,7 +188,7 @@ const secondobserver = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.3 }); // Adjust the threshold as needed
 
-// Observe each element
+
 secondfadeElements.forEach(element => {
  secondobserver.observe(element);
 });
@@ -202,9 +202,9 @@ const phoneobserver = new IntersectionObserver(entries => {
       entry.target.classList.add('visible-mobile-three');
     }
   });
-}, { threshold: 0.3}); // Adjust the threshold as needed
+}, { threshold: 0.3});
 
-// Observe each element
+
 phonefadeElements.forEach(element => {
  phoneobserver.observe(element);
 });
@@ -367,7 +367,7 @@ function showHideScrollTopButton() {
   let form = document.querySelector('.contact-form');
   let submitBtn = document.getElementById('submitBtn');
 
-  submitBtn.addEventListener('click', function() {
+  submitBtn.addEventListener('click', function(){
       if (form.checkValidity()) {
           // Clear inputs and show submit text
           clearFormInputs();
