@@ -363,11 +363,11 @@ function showHideScrollTopButton() {
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  var form = document.querySelector('.contact-form');
-  var submitBtn = document.getElementById('submitBtn');
+ 
+  let form = document.querySelector('.contact-form');
+  let submitBtn = document.getElementById('submitBtn');
 
-  submitBtn.addEventListener('click', function () {
+  submitBtn.addEventListener('click', function() {
       if (form.checkValidity()) {
           // Clear inputs and show submit text
           clearFormInputs();
@@ -398,4 +398,3 @@ document.addEventListener('DOMContentLoaded', function () {
           submitText.style.display = 'none';
       }, 3000);
   }
-});
