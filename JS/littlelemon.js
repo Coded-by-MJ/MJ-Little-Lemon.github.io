@@ -59,7 +59,9 @@ function  handleSlider() {
   }
 }
 
-setInterval(handleSlider, 2500);
+window.addEventListener("load", () => {
+  setInterval(handleSlider, 2500);
+});
 
 
 
