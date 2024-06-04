@@ -1,12 +1,12 @@
 # Little Lemon Restaurant
-MJ's first website
+My first website
 Little Lemon is a family-owned Mediterranean restaurant focused on traditional recipes served with a modern twist.
 
 
 
 
 ## Overview
-![Desktop](images/web.png)!
+![Desktop](images/web.png)
 ![Mobile](images/mobile.png)
 
 
