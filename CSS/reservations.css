@@ -1,11 +1,3 @@
-:root{
-    --main-bg-color: rgb(253,237,222);
-    --main-txt-color:  #495e57;
-    --main-secondary-color:  #aa8f6f;  
-    --font-headings: 'Oswald', 'Roboto', serif;
-    --font-text: 'Poppins', "Open Sans", sans-serif; 
-    --nav-bar-height: 68px;
-}
 
 *{
     margin: 0;
@@ -25,6 +17,9 @@ body{
 
 
 
+main{
+    margin-top: 5rem;
+}
 
 
 
@@ -68,18 +63,15 @@ body{
 .reservation-form {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     max-width: 1400px;
     margin: 0 auto;
     margin-bottom: 3rem;
     justify-content: space-between;
     
-  }
+}
   
 .input-container{
     width: 31%;
-    position: relative;
-    z-index: 5;
 }
 
 .input-container label {  
@@ -92,40 +84,9 @@ body{
     letter-spacing: 0.05rem;
 }
 
-.input-container select, .input-container input{
-    padding: 0.5rem;
-    width: 100%;
-    color: var(--main-secondary-color);
-    font-size: 1rem;
-    font-family: var(--font-text);
-    border: 0.2rem solid var(--main-secondary-color);
-    background-color: transparent;
-    opacity: 1;
-    appearance: none;
-    border-radius: 0.25rem;
-}
 
 
 
-.guest-icon, .time-icon{
-    position: absolute;
-    right: 4%;
-    z-index: 1;
-    transform: translateY(9px);
-    font-size: 1.2rem;
-    cursor: pointer;
-    color: var(--main-secondary-color);
-}
-
-.calendar-icon{
-    position: absolute;
-    right: 4%;
-    z-index: 1;
-    transform: translateY(9px);
-    font-size: 1.1rem;
-    cursor: pointer;
-    color: var(--main-secondary-color);
-}
 
 .reserve-btn{
     display: flex;
@@ -286,14 +247,11 @@ body{
          font-size: 0.8rem;
      }
      
-     .guest-icon, .time-icon{
+     .guest-icon, .time-icon, .calendar-icon{
          font-size: 1rem;
      }
      
-     .calendar-icon{
-         font-size: 0.9rem;
-     }
-     
+    
 
 
 }

@@ -1,11 +1,3 @@
-:root{
-    --main-bg-color: rgb(253,237,222);
-    --main-txt-color:  #495e57;
-    --main-secondary-color:  #aa8f6f;  
-    --font-headings: 'Oswald', 'Roboto', serif;
-    --font-text: 'Poppins', "Open Sans", sans-serif; 
-    --nav-bar-height: 68px;
-}
 
 *{
     margin: 0;
@@ -17,8 +9,15 @@ body{
     background-color: var(--main-bg-color);
     font-size: 16px;
     
- 
 }
+
+
+
+main{
+    margin-top: 5rem;
+}
+
+
 
 .about-title{
     text-align: center;
@@ -45,9 +44,16 @@ body{
     left: 12%;
 }
 
-.history-content{
-    position: relative;
-    margin-bottom: 5rem;
+
+.history{
+    margin-bottom: 3rem;
+}
+
+.history-content, .venue-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-right: 2rem;
 }
 
 .history-content h2{
@@ -55,9 +61,7 @@ body{
     color: var(--main-txt-color);
     font-size: 5.5rem;
     letter-spacing: 0.2rem;
-    margin: 2rem 0;
-
-    
+    margin: 2rem 0 0 0;
 
 }
 
@@ -66,24 +70,33 @@ body{
     font-family: var(--font-text);
     font-size: 1.3rem;
     color: var(--main-secondary-color);
-    line-height: 1.5rem;
-    padding-right: 3rem;
+    line-height: 150%;
+    margin: 0;
+
 }
 
+.about-history-images{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+}
 
 .history-img-one, .history-img-two{
  width: 100%;
-  max-height: 450px;
+ max-height: 450px;
+ margin: 0;
 }
 
-.history-img-one{
-    margin-bottom: 1rem;
+.history-img-one > img, .history-img-two > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
-.venue-content{
-    position: relative;
-}
-.venue-content img{
+
+.venue img{
     width: 100%;
     height: 100%;
     
@@ -95,7 +108,7 @@ body{
     font-size: 5.5rem;
     letter-spacing: 0.2rem;
     max-width: 300px;
-    margin-bottom: 2rem;
+    margin: 0;
 
 }
 
@@ -103,82 +116,66 @@ body{
     font-family: var(--font-text);
     font-size: 1.3rem;
     color: var(--main-secondary-color);
-    line-height: 1.5rem;
-    padding-right: 2rem;
+    line-height: 150%;
+    margin: 0;
 }
 
 
 
 .history-heading, .history-first-para, .history-second-para, .venue-heading, .venue-para-one, .venue-para-two{
-    opacity: 0;
-    transform: translateY(25px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
-}
-
-
-.history-img-one, .history-img-two{
-    opacity: 0;
-    transform: translateY(25px);
-    transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+    opacity: 1;
+    transform: translateY(20px);
+    transition: opacity 0.2s, transform 0.2s;
 }
 
 
 
 
 
-.visible-stable {
+
+.visible-up {
     opacity: 1;
     transform: translateY(0);
 }
+
+
 
 @media only screen and (min-width: 1200px){
     .about-title h1{
         left: 18%;
     }
 
-    .history-content h2{
-        margin-top: 5rem;
-    }
-
-    .history-first-para{
-        margin-bottom: 3rem;
-    }
-
-    .history-second-para{
-        margin: 0;
-    }
-    
-    .venue-para-one{
-        margin-bottom: 3rem;
-    }
-    .venue-para-two{
-        margin: 0;
-    }
 }
+
+
+
 
 @media only screen and (min-width: 1400px){
     .about-title h1{
         left: 23%;
     }
     .history-content h2{
-        margin-top: 7rem;
-        font-size: 6.5rem;
+       font-size: 6.5rem;
     }
 
     .history-content p{
         font-size: 1.5rem;
-        line-height: 1.8rem;
-        padding-right: 5rem;
     }
 
     .venue-content h2{
         font-size: 6.5rem;
     }
 
+    .venue-content, .history-content{
+        padding-right: 3rem;
+    }
+
     .venue-content p{
         font-size: 1.5rem;
-        line-height: 1.8rem;
-        padding-right: 2rem;
+    }
+
+    .about-history-images{
+        height: 915px;
     }
 }
 
@@ -194,34 +191,40 @@ body{
     .history-content h2{
         font-size: 5rem;
         margin: 0;
-        margin-bottom: 1rem;
     }
 
     .venue-content h2{
         font-size: 5rem;
-        margin-bottom: 1rem;
     }
 
     .history-content p{
         font-size: 1.2rem;
-        padding: 0;
     }
 
 
   
     .venue-content p{
         font-size: 1.2rem;
-        padding: 0;
+     
     }
 
     .history-img-one, .history-img-two{
         max-height: 400px;
-        padding: 0 100px;
     }
 
     .venue-content img{
         padding: 0 50px;
     }
+    .about-history-images{
+        height: 830px;
+    }
+
+
+     .venue-content, .history-content{
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+    
 }
 
 
@@ -246,49 +249,40 @@ body{
 
     .history-content h2{
         font-size: 3.5rem;
-        margin: 0;
-        margin-bottom: 1rem;
         letter-spacing: 0.1rem;
     }
 
-    .venue-content{
-        padding-bottom: 2rem;
-    }
     .venue-content h2{
         font-size: 3.5rem;
-        margin-bottom: 1rem;
         letter-spacing: 0.1rem;
     }
 
-    .history-content{
-        margin-bottom: 3rem;
+
+    .venue-content, .history-content{
+       padding: 0;
+       margin-bottom: 2rem;
     }
 
     .history-content p{
         font-size: 1rem;
-        padding: 0;
+     
     }
 
     .venue-content p{
         font-size: 1rem;
-        padding: 0;
     }
 
     .history-img-one, .history-img-two{
         max-height: 400px;
-        padding: 0 50px;
 
     }
 
 
 
-    .venue-content img, .history-img-one{
-        padding: 0 50px;
-        margin-top: 1.5rem;
-    }
 
 
-.history-heading, .history-first-para, .history-second-para, .venue-heading, .venue-para-one, .venue-para-two{
+.history-heading, .history-first-para, .history-second-para, .venue-heading,
+ .venue-para-one, .venue-para-two{
        transform: translateY(15px);
     }
     

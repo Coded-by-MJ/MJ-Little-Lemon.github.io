@@ -79,7 +79,7 @@
                    <p class="contact-phone">Tel: 903-951-7466</p>  
                    <p class="contact-email">Email: <a href="mailto:miracleosemudiahen@hotmail.com">miracle******@hotmail.com</a></p>
                 
-                 <form method="post" class="contact-form needs-validation" novalidate>
+                 <form method="post"  onsubmit="handleContactform(event)" class="contact-form  needs-validation" novalidate>
                     <div class="row mb-2">
                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                         <label class="col-form-label" for="firstName">Enter Your First Name</label>
@@ -108,7 +108,7 @@
                       </div>
                        <div class="row submit-area">
                         <div class="col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-flex justify-content-center align-items-center">
-                         <button type="button" class="contact-btn" id="submitBtn">Submit<i class="fa-solid fa-angles-right"></i></button>
+                         <button type="submit" class="contact-btn" id="submitBtn">Submit<i class="fa-solid fa-angles-right"></i></button>
                        </div>
                       </div>
 
@@ -133,12 +133,15 @@
     
      </main>
     
+    
      <footer class="container-fluid">
-      <div class="row footer">
-        <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
-              <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                      <h2 class="footer-heading">Don't Be ShellFish</h2>
-                      <p class="footer-para">Join our mailing list and receive news and offers</p>
+      <div class="row">
+              <div class="col-md-12 col-lg-6 col-xl-6 footer-info">
+
+                      <div class="footer-content">
+                       <h2 class="footer-heading">Don't Be ShellFish</h2>
+                       <p class="footer-para">Join our mailing list and receive news and offers</p>
+                      </div>
 
 
                       <div class="footer-email">
@@ -151,11 +154,12 @@
                             </form>
                       </div>
                       <span id="submitText"  class="email-submit-text">Thanks for Submitting!</span>
-                      <span class="copyright"><i class="fa-regular fa-copyright"></i>2023 Little Lemon. Coded by MJ</span>
+
+                    
 
               </div>
 
-              <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+              <div class="col-md-12 col-lg-6 col-xl-6 contact-info">
                    <div class="footer-contact">
                     <p class="phone-number">903-951-7466</p>
                     <p class="email-address"><a href="mailto:miracleosemudiahen@hotmail.com">miracle******@hotmail.com</a></p>
@@ -204,8 +208,11 @@
 
               </div>
 
+              <div class="copyright"><span><i class="fa-regular fa-copyright"></i>2023 Little Lemon. Coded by MJ</span></div>
        </div>
+       <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
  </footer>
+
 
          
         <script src="JS/littlelemon.js"></script>
