@@ -441,27 +441,18 @@ select{
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0;
-  filter: brightness(0.75);
   scroll-snap-align: start;
 
-
 }
 
-.hero-bg > .card:nth-child(1){
-  background-image: url("https://coded-by-mj.github.io/MJ-Little-Lemon.github.io/images/grilled-bass.jpg");
-}
 
-.hero-bg > .card:nth-child(2){
-  background-image: url("https://coded-by-mj.github.io/MJ-Little-Lemon.github.io/images/lamb-kebab.jpg");
+.hero-bg > .card img{
+    filter: brightness(0.75);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
-.hero-bg > .card:nth-child(3){
-  background-image: url("https://coded-by-mj.github.io/MJ-Little-Lemon.github.io/images/hum-mus.jpg");
-
-}
-.hero-bg > .card:nth-child(4){
-  background-image: url("https://coded-by-mj.github.io/MJ-Little-Lemon.github.io/images/lemon-juice.jpg");
-}
-
 
 
 
