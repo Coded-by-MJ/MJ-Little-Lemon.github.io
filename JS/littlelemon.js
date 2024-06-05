@@ -316,4 +316,4 @@ function showHideScrollTopButton() {
 
 
   updateReserveForm();
-  setInterval(handleSlider, 2500);
+  setInterval(handleSlider, 3000);
