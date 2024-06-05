@@ -59,9 +59,9 @@ function  handleSlider() {
   }
 }
 
-window.addEventListener("load", () => {
-  setInterval(handleSlider, 2500);
-});
+
+  
+
 
 
 
@@ -316,4 +316,4 @@ function showHideScrollTopButton() {
 
 
   updateReserveForm();
-
+  setInterval(handleSlider, 2500);

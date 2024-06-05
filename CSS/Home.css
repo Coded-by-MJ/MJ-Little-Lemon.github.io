@@ -448,18 +448,18 @@ select{
 }
 
 .hero-bg > .card:nth-child(1){
-  background-image: url("/images/grilled-bass.jpg");
+  background-image: url("../images/grilled-bass.jpg");
 }
 
 .hero-bg > .card:nth-child(2){
-  background-image: url("/images/lamb-kebab.jpg");
+  background-image: url("../images/lamb-kebab.jpg");
 }
 .hero-bg > .card:nth-child(3){
-  background-image: url("/images/hum-mus.jpg");
+  background-image: url("../images/hum-mus.jpg");
 
 }
 .hero-bg > .card:nth-child(4){
-  background-image: url("/images/lemon-juice.jpg");
+  background-image: url("../images/lemon-juice.jpg");
 }
 
 
