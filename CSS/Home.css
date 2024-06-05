@@ -360,6 +360,7 @@ select{
 .first-bg{
     width: 100px;
     height: auto;
+    filter: drop-shadow(1px 1px 1px var(--main-secondary-color));
 }
 
 
