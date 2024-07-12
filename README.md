@@ -1,33 +1,6 @@
-# Little Lemon Restaurant
-My first website
-Little Lemon is a family-owned Mediterranean restaurant focused on traditional recipes served with a modern twist.
+# My Little Lemon Website has been moved to a new domain
 
-
-
-
-## Overview
-![Desktop](images/web.png)
-![Mobile](images/mobile.png)
-
-
-### Links
-
-- Live Site URL: [Little-Lemon](https://coded-by-mj.github.io/MJ-Little-Lemon.github.io/)
-
-
-
-## My process
-
-### Built with
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- JavaScript
-- Bootstrap
-- Mobile-first workflow
-
-
+- new link [Little Lemon](https://mj-little-lemon.netlify.app/)
 
 ## Author
 
